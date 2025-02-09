@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 30px;
+    @media (max-content:620px) {
+        flex-direction: column;
+        gap: 50px;
+    }
+    &__right{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        button{
+            cursor: pointer;
+        }
+        input{
+            @media (max-content:620px) {
+                max-width: 100%;
+            }
+            background: rgba(71, 147, 255, 0.2);
+            border-radius: 10px;
+            width: 194px;
+            padding: 9px 20px;
+            font-size: 15px;
+            font-weight: 500;
+            &::placeholder{
+                color: black;
+            }
+        }
+    }
+}
